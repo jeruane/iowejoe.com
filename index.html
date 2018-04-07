@@ -18,9 +18,14 @@ body {
   height: 240px;
   line-height: 240px;
   margin: 45px auto;
-  background: linear-gradient(to bottom right, rgb(90 200 251) , rgb(60 149 255));
+  background-image:        -webkit-gradient(linear, left top, right bottom, from(#5ac8fb), to(#3c95ff));
+  background-image: -webkit-linear-gradient(bottom right,    #5ac8fb , #3c95ff);
+  background-image:    -moz-linear-gradient(bottom right,    #5ac8fb , #3c95ff);
+  background-image:      -o-linear-gradient(bottom right,    #5ac8fb , #3c95ff);
+  background-image:         linear-gradient(to bottom right, #5ac8fb , #3c95ff);
   text-align: center;
   color: #FAFAFA;
+  text-decoration: none;
 }
 .payme-squarecash {
   font-family: sans-serif;
@@ -30,9 +35,15 @@ body {
   height: 240px;
   line-height: 240px;
   margin: 45px auto;
-  background: linear-gradient(to bottom right, rgb(50 221 0) , rgb(40 194 1));
+  background-image:        -webkit-gradient(linear, left top, right bottom, from(#32dd00), to(#28c201));
+  background-image: -webkit-linear-gradient(bottom right,    #32dd00 , #28c201);
+  background-image:    -moz-linear-gradient(bottom right,    #32dd00 , #28c201);
+  background-image:      -o-linear-gradient(bottom right,    #32dd00 , #28c201);
+  background-image:         linear-gradient(to bottom right, #32dd00 , #28c201);
+  background: linear-gradient(to bottom right, #32dd00 , #28c201);
   text-align: center;
   color: #FAFAFA;
+  text-decoration: none;
 }
 .payme-facebook-messenger {
   font-family: sans-serif;
@@ -42,9 +53,15 @@ body {
   height: 240px;
   line-height: 240px;
   margin: 45px auto;
-  background: linear-gradient(to bottom right, rgb(1 209 255) , rgb(4 129 255));
+  background-image:        -webkit-gradient(linear, left top, right bottom, from(#01d1ff), to(#0481ff));
+  background-image: -webkit-linear-gradient(bottom right,    #01d1ff , #0481ff);
+  background-image:    -moz-linear-gradient(bottom right,    #01d1ff , #0481ff);
+  background-image:      -o-linear-gradient(bottom right,    #01d1ff , #0481ff);
+  background-image:         linear-gradient(to bottom right, #01d1ff , #0481ff);
+  background: linear-gradient(to bottom right, #01d1ff , #0481ff);
   text-align: center;
   color: #FAFAFA;
+  text-decoration: none;
 }
 .paymelist-header {
   text-align: center;
@@ -57,15 +74,9 @@ body {
 <body>
   <div class="paymelist">
     <div class="paymelist-header">Pay me on</div>
-    <a href="https://www.messenger.com/t/jeruane" style="text-decoration: none;">
-      <div class="payme-facebook-messenger">Facebook Messenger</div>
-    </a>
-    <a href="https://venmo.com/jeruane" style="text-decoration: none;">
-      <div class="payme-venmo">Venmo</div>
-    </a>
-    <a href="https://cash.me/$jeruane" style="text-decoration: none;">
-      <div class="payme-squarecash">SquareCash</div>
-    </a>
+    <a href="https://www.messenger.com/t/jeruane" class="payme-facebook-messenger">Facebook Messenger</a>
+    <a href="https://venmo.com/jeruane" class="payme-venmo">Venmo</a>
+    <a href="https://cash.me/$jeruane" class="payme-squarecash">SquareCash</a>
   </div>
 </body>
 </html>

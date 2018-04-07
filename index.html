@@ -2,12 +2,64 @@
 <html>
 <head>
 <style>
+body {
+  background-image: url(https://raw.githubusercontent.com/sixrevisions/responsive-full-background-image/master/images/background-photo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+}
+.payme-venmo {
+  font-family: sans-serif;
+  border-radius: 20px;
+  display: block;
+  width: 240px;
+  height: 240px;
+  line-height: 240px;
+  margin: 45px auto;
+  background: linear-gradient(to bottom right, rgb(90 200 251) , rgb(60 149 255));
+  text-align: center;
+  color: #FAFAFA;
+}
+.payme-squarecash {
+  font-family: sans-serif;
+  border-radius: 20px;
+  display: block;
+  width: 240px;
+  height: 240px;
+  line-height: 240px;
+  margin: 45px auto;
+  background: linear-gradient(to bottom right, rgb(50 221 0) , rgb(40 194 1));
+  text-align: center;
+  color: #FAFAFA;
+}
+.payme-facebook-messenger {
+  font-family: sans-serif;
+  border-radius: 20px;
+  display: block;
+  width: 240px;
+  height: 240px;
+  line-height: 240px;
+  margin: 45px auto;
+  background: linear-gradient(to bottom right, rgb(1 209 255) , rgb(4 129 255));
+  text-align: center;
+  color: #FAFAFA;
+}
 </style>
 </head>
 <body>
-  <ul>
-  <li><a href="https://venmo.com/jeruane">Pay me on Venmo</a></li>
-  <li><a href="https://cash.me/$jeruane">Pay me on Squarecash</a></li>
-  </ul>
+  <div class="paymelist">
+    <div class="paymelist-header">Pay me on:</div>
+    <a href="https://www.messenger.com/t/jeruane" style="text-decoration: none;">
+      <div class="payme-facebook-messenger">Facebook Messenger</div>
+    </a>
+    <a href="https://venmo.com/jeruane" style="text-decoration: none;">
+      <div class="payme-venmo">Venmo</div>
+    </a>
+    <a href="https://cash.me/$jeruane" style="text-decoration: none;">
+      <div class="payme-squarecash">SquareCash</div>
+    </a>
+  </div>
 </body>
 </html>
